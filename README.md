@@ -32,5 +32,11 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Docker
+``` 
+docker build -t flaskex  .
+docker run -p 5000:5000 flaskex
+```
+
 ## Contributing
 Please take a look at our [contributing](https://github.com/anfederico/Flaskex/blob/master/CONTRIBUTING.md) guidelines if you're interested in helping!
