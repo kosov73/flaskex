@@ -2,14 +2,14 @@ FROM python:latest
 
 RUN apt update
 
-RUN apt install git
+RUN apt install git python3-pip -y
 
-RUN apt install python3-pip -y
+RUN git clone https://github.com/kosov73/flaskex.git
 
-RUN git clone https://github.com/kosov73/flaskex.git && cd flaskex
+WORKDIR /flaskex
 
-RUN cd flaskex && pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
-CMD cd flaskex && python app.py
+CMD ["python", "app.py"]
 
 EXPOSE 5000
