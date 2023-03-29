@@ -37,6 +37,11 @@ python app.py
 docker build -t flaskex  .
 docker run -p 5000:5000 flaskex
 ```
+  
+## Docker-compose
+``` 
+docker-compose up
+```
 
 ## Contributing
 Please take a look at our [contributing](https://github.com/anfederico/Flaskex/blob/master/CONTRIBUTING.md) guidelines if you're interested in helping!
