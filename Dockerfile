@@ -1,10 +1,8 @@
 FROM python:latest
 
-RUN apt update
-
-RUN apt install git python3-pip -y
-
-RUN git clone https://github.com/kosov73/flaskex.git
+RUN apt update \
+    && apt install git python3-pip -y \
+    && git clone https://github.com/kosov73/flaskex.git
 
 WORKDIR /flaskex
 
