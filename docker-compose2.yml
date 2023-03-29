@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+
+  git:
+    image: python:latest
+    build: .
+    command: ["bash", "-c", "apt-get update; apt-get install git -y; git clone https://github.com/kosov73/flaskex.git; pip install -r /flaskex/requirements.txt; python /flaskex/app.py"]
+    ports:
+      - "5000:5000"
