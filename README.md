@@ -40,7 +40,7 @@ docker run -p 5000:5000 flaskex
   
 ## Docker-compose
 ``` 
-docker-compose -f docker-compose.yaml up
+docker-compose -f docker-compose.yml up
 ```
 
 ## Contributing
